@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <RadioButton
+        android:id="@+id/tbtn_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:visibility="gone"
+        android:paddingBottom="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tbtn_item"
+        android:padding="15dp"
+        android:text="eeee"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_item_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:padding="15dp"
+        android:text="删除"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_item_text_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn_item_delete"
+        android:padding="15dp"
+        android:text="金"
+        android:textSize="15sp" />
+</RelativeLayout>
